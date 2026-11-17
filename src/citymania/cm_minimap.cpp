@@ -1552,7 +1552,7 @@ void SmallMapWindow::SwitchMapType(SmallMapType map_type)
 
 	if (map_type == SMT_LINKSTATS) this->overlay->SetDirty();
 	if (map_type != SMT_INDUSTRY && map_type != CM_SMT_IMBA) this->BreakIndustryChainLink();
-	this->SetDirty();
+	this->ReInit();
 }
 
 /**
